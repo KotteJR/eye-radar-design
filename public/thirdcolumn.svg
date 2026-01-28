@@ -1,0 +1,58 @@
+<svg width="217" height="217" viewBox="0 0 217 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dg_185_697)">
+<path d="M108.491 125.264C118.852 125.264 127.253 116.864 127.253 106.502C127.253 96.1408 118.852 87.741 108.491 87.741C98.1291 87.741 89.7292 96.1408 89.7292 106.502C89.7292 116.864 98.1291 125.264 108.491 125.264Z" fill="#F26346"/>
+<path d="M156.279 35.9377C156.279 35.9377 128.233 65.9124 128.183 65.9615C124.053 70.0439 121.544 69.6161 121.487 66.286L121.411 9.07775L95.5803 9V67.921C103.608 66.9565 112.883 68.6947 121.497 73.258L129.043 77.45C138.35 82.624 149.992 80.7615 157.21 72.9373L174.562 54.2198L156.279 35.9377Z" fill="#F26346"/>
+<path d="M37.9381 58.7266C37.9381 58.7266 67.9132 86.7722 67.9625 86.822C72.0449 90.9523 71.617 93.4608 68.2869 93.5185L11.0778 93.5941L11 119.425H69.9219C68.9574 111.397 70.6957 102.122 75.259 93.5083L79.4511 85.9623C84.6251 76.6562 82.7627 65.0133 74.9384 57.7954L56.2206 40.4443L37.9381 58.7266Z" fill="#F26346"/>
+<path d="M60.7308 177.063C60.7308 177.063 88.7768 147.088 88.8267 147.039C92.9572 142.956 95.4657 143.384 95.5226 146.714L95.5983 203.922L121.43 204V145.079C113.402 146.044 104.127 144.305 95.5133 139.742L87.967 135.55C78.6607 130.376 67.0177 132.238 59.7997 140.062L42.4482 158.78L60.7308 177.063Z" fill="#F26346"/>
+<path d="M179.062 154.276C179.062 154.276 149.087 126.231 149.038 126.181C144.956 122.05 145.383 119.541 148.714 119.484L205.922 119.409L206 93.5782H147.078C148.043 101.606 146.304 110.88 141.741 119.495L137.549 127.04C132.375 136.347 134.238 147.989 142.062 155.207L160.78 172.558L179.062 154.276Z" fill="#F26346"/>
+</g>
+<defs>
+<filter id="filter0_dg_185_697" x="0" y="0" width="217" height="217" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="5.5"/>
+<feColorMatrix type="matrix" result="shdwTex" values="0 0 0 0 0.520545 0 0 0 0 0.520545 0 0 0 0 0.520545 0 0 0 0.43 0"/><feTurbulence type="fractalNoise" baseFrequency="9.0909090042114258 9.0909090042114258" numOctaves="3" seed="5211" />
+<feDisplacementMap in="shdwTex" scale="0.2199999988079071" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_185_697"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="9.0909090042114258 9.0909090042114258" numOctaves="3" seed="5211" result="displacementX" />
+<feTurbulence type="fractalNoise" baseFrequency="9.0909090042114258 9.0909090042114258" numOctaves="3" seed="5212" result="displacementY" />
+<feColorMatrix in="displacementX" type="matrix" values="0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 1" result="displacementXRed" />
+<feColorMatrix in="displacementY" type="matrix" values="0 0 0 0 0  0 0 0 1 0  0 0 0 0 0  0 0 0 0 1" />
+<feComposite in="displacementXRed" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+<feDisplacementMap in="shape" scale="0.2199999988079071" xChannelSelector="R" yChannelSelector="G" width="100%" height="100%" />
+<feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" />
+<feComponentTransfer result="sourceDisplacedAlpha">
+<feFuncA type="gamma" exponent="0.2" />
+</feComponentTransfer>
+<feColorMatrix in="shape" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" />
+<feComponentTransfer result="inputSourceAlpha">
+<feFuncA type="gamma" exponent="0.2" />
+</feComponentTransfer>
+<feComposite in="sourceDisplacedAlpha" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" result="displacementAlphasMultiplied"/>
+<feComposite in="displacementAlphasMultiplied"  operator="arithmetic" k1="0" k2="0" k3="-0.5" k4="0.5" result="centeringAdjustment"/>
+<feComposite in="displacementX" in2="displacementAlphasMultiplied" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+<feComposite in="centeringAdjustment" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
+<feColorMatrix  type="matrix" values="0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 1" result="displacementXFinal" />
+<feComposite in="displacementY" in2="displacementAlphasMultiplied" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+<feComposite in="centeringAdjustment" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
+<feColorMatrix  type="matrix" values="0 0 0 0 0  0 0 0 1 0  0 0 0 0 0  0 0 0 0 1" result="displacementYFinal" />
+<feComposite in="displacementXFinal" in2="displacementYFinal" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
+<feComposite in2="displacementAlphasMultiplied" operator="in" result="displacementMap" />
+<feFlood flood-color="rgb(127, 127, 127)" flood-opacity="1"/>
+<feComposite in2="displacementAlphasMultiplied" operator="out" />
+<feComposite in2="displacementMap" operator="over" result="displacementMapWithBg"/>
+<feDisplacementMap in="shape" scale="0.2199999988079071" xChannelSelector="R" yChannelSelector="G" width="100%" height="100%" result="displacedImage" />
+<feColorMatrix in="shape" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 127 0" result="imageOpaque" />
+<feDisplacementMap in="imageOpaque" in2="displacementMapWithBg" scale="0.2199999988079071" xChannelSelector="R" yChannelSelector="G" width="100%" height="100%" result="displacedImageOpaque" />
+<feColorMatrix in="displacedImage" type="matrix" values="0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 127 0" result="displacedImageRed" />
+<feColorMatrix in="shape" type="matrix" values="0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 127 0" />
+<feComposite in="displacedImageRed"  operator="atop" result="transparencyRedMap"/>
+<feColorMatrix in="transparencyRedMap" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0" result="transparencyAlphaMap" />
+<feComposite in="displacedImageOpaque" in2="imageOpaque" operator="over" />
+<feComposite in2="transparencyAlphaMap" operator="in" result="effect2_texture_185_697"/>
+<feBlend mode="normal" in="effect2_texture_185_697" in2="effect1_dropShadow_185_697" result="effect2_texture_185_697"/>
+</filter>
+</defs>
+</svg>
