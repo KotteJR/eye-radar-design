@@ -110,7 +110,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
           >
             <div className="flex items-center justify-between">
               <h3 
-                className="font-['Inter',_sans-serif] font-semibold text-[14px] leading-[20px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Partner Information:
@@ -160,7 +160,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
               {/* First & Last Name */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   First & Last Name
@@ -170,7 +170,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -182,7 +182,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
               {/* Title */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   Title
@@ -192,7 +192,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                   name="title"
                   value={formData.title}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -204,7 +204,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
               {/* Email */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   Email
@@ -214,7 +214,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -226,7 +226,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
               {/* Phone number */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   Phone number
@@ -236,7 +236,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -254,7 +254,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
             style={{ backgroundColor: theme.surfaceSecondary }}
           >
               <h3 
-                className="font-['Inter',_sans-serif] font-semibold text-[14px] leading-[20px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Company Information:
@@ -263,7 +263,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                 {/* Company Name */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Company Name
@@ -273,7 +273,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                     name="companyName"
                     value={formData.companyName}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -285,7 +285,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                 {/* Org. Number */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Org. Number
@@ -295,7 +295,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                     name="orgNumber"
                     value={formData.orgNumber}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -307,7 +307,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                 {/* Address */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Address
@@ -317,7 +317,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -329,7 +329,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                 {/* VAT. Number */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     VAT. Number
@@ -339,7 +339,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
                     name="vatNumber"
                     value={formData.vatNumber}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,

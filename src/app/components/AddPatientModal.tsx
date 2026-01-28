@@ -132,7 +132,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
           >
             <div className="flex items-center justify-between">
               <h3 
-                className="font-['Inter',_sans-serif] font-semibold text-[14px] leading-[20px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Adult / Guardian information:
@@ -182,7 +182,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               {/* First Name */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   First Name
@@ -192,7 +192,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -204,7 +204,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               {/* Last Name */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   Last Name
@@ -214,7 +214,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -226,7 +226,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               {/* Email */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   Email
@@ -236,7 +236,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -248,7 +248,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               {/* Phone number */}
               <div className="flex flex-col gap-2">
                 <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                   Phone number
@@ -258,7 +258,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                  className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -276,7 +276,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               style={{ backgroundColor: theme.surfaceSecondary }}
             >
               <h3 
-                className="font-['Inter',_sans-serif] font-semibold text-[14px] leading-[20px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Patient Information:
@@ -285,7 +285,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 {/* Birth Date */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Birth Date
@@ -295,7 +295,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="birthDate"
                     value={formData.birthDate}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -307,7 +307,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 {/* Native Language */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Native Language
@@ -317,7 +317,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="nativeLanguage"
                     value={formData.nativeLanguage}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -329,7 +329,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 {/* Clinic */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Clinic
@@ -339,7 +339,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="clinic"
                     value={formData.clinic}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -351,7 +351,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 {/* Phone */}
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Phone
@@ -361,7 +361,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -381,7 +381,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               style={{ backgroundColor: theme.surfaceSecondary }}
             >
               <h3 
-                className="font-['Inter',_sans-serif] font-semibold text-[14px] leading-[20px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Child {index + 1} Information:
@@ -389,7 +389,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     First Name
@@ -399,7 +399,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="firstName"
                     value={child.firstName || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -409,7 +409,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 </div>
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Last Name
@@ -419,7 +419,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="lastName"
                     value={child.lastName || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -429,7 +429,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 </div>
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Email
@@ -439,7 +439,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="email"
                     value={child.email || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -449,7 +449,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 </div>
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Phone number
@@ -459,7 +459,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="phoneNumber"
                     value={child.phoneNumber || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -469,7 +469,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 </div>
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Birth Date
@@ -479,7 +479,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="birthDate"
                     value={child.birthDate || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -489,7 +489,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 </div>
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Native Language
@@ -499,7 +499,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="nativeLanguage"
                     value={child.nativeLanguage || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -509,7 +509,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 </div>
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Clinic
@@ -519,7 +519,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="clinic"
                     value={child.clinic || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
@@ -529,7 +529,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                 </div>
                 <div className="flex flex-col gap-2">
                   <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] transition-colors duration-200"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
                     Phone
@@ -539,7 +539,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                     name="phone"
                     value={child.phone || ""}
                     onChange={(e) => handleChildChange(index, e)}
-                    className="h-10 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
+                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{
                     backgroundColor: theme.input.background,
                     border: `1px solid ${theme.input.border}`,
