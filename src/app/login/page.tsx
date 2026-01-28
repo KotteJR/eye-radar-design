@@ -6,7 +6,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white p-4">
       <div 
-        className="w-full max-w-6xl rounded-2xl overflow-hidden flex min-h-[600px]"
+        className="w-full max-w-6xl rounded-2xl overflow-hidden flex min-h-[600px] shadow-lg"
         style={{
           border: '1px solid #E3E3E3',
         }}
@@ -25,12 +25,12 @@ export default function LoginPage() {
           </div>
 
           {/* Welcome Back Title */}
-          <h1 className="font-['Inter',_sans-serif] font-semibold text-[30px] leading-[48px] text-[#1B1B1C] mb-6 text-center">
+          <h1 className="font-['Inter',_sans-serif] font-semibold text-[30px] leading-[48px] text-[#1B1B1C] mb-10 text-center">
             Welcome Back
           </h1>
 
           {/* Login Separator */}
-          <div className="flex items-center gap-4 mb-8 w-full max-w-md">
+          <div className="flex items-center gap-4 mb-12 w-full max-w-md">
             <div className="flex-1 h-px bg-[#E3E3E3]"></div>
             <span className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] text-[#919191]">
               Login
@@ -60,7 +60,7 @@ export default function LoginPage() {
                 </label>
                 <a
                   href="#"
-                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] text-[#303030] italic hover:underline transition-colors"
+                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] text-[#a1a1a1] italic hover:underline transition-colors"
                 >
                   Forgot Password?
                 </a>
@@ -74,7 +74,7 @@ export default function LoginPage() {
 
             {/* Login Button */}
             <button
-              className="w-full py-3 rounded-lg font-['Inter',_sans-serif] font-semibold text-[16px] leading-[24px] text-white transition-opacity hover:opacity-90"
+              className="w-full py-3 rounded-lg font-['Inter',_sans-serif] text-[16px] leading-[24px] text-white transition-opacity hover:opacity-90"
               style={{
                 background: "linear-gradient(90deg, #FF5A39 0%, #FF9E75 100%)",
               }}
@@ -85,8 +85,8 @@ export default function LoginPage() {
 
           {/* Support Link */}
           <div className="mt-auto pt-8 text-center">
-            <span className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] text-[#ABABAB]">
-              Need support? Contact us
+            <span className="font-['Inter',_sans-serif] font-normal text-[16px] leading-[24px] text-[#a1a1a1]">
+              Need support? <a href="mailto:support@eyeRadar.com" className="text-[#a1a1a1] font-semibold hover:underline">Contact us</a>
             </span>
           </div>
         </div>
