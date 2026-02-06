@@ -19,8 +19,6 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
     phoneNumber: "",
     birthDate: "",
     nativeLanguage: "",
-    clinic: "",
-    phone: "",
   });
   const [isAdultPatient, setIsAdultPatient] = useState(false);
   const [children, setChildren] = useState<any[]>([]);
@@ -39,8 +37,6 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
       phoneNumber: "",
       birthDate: "",
       nativeLanguage: "",
-      clinic: "",
-      phone: "",
     });
     setIsAdultPatient(false);
     setChildren([]);
@@ -57,12 +53,9 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
     setChildren([...children, {
       firstName: "",
       lastName: "",
-      email: "",
-      phoneNumber: "",
       birthDate: "",
       nativeLanguage: "",
-      clinic: "",
-      phone: "",
+      class: "",
     }]);
   };
 
@@ -132,7 +125,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
           >
             <div className="flex items-center justify-between">
               <h3 
-                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-medium text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Adult / Guardian information:
@@ -269,14 +262,14 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
             </div>
           </div>
 
-          {/* Second Container - Only visible when checkbox is checked: Birth Date, Native Language, Clinic, Phone */}
+          {/* Second Container - Only visible when checkbox is checked: Birth Date, Native Language */}
           {isAdultPatient && (
             <div 
               className="rounded-lg p-6 flex flex-col gap-4 transition-colors duration-200"
               style={{ backgroundColor: theme.surfaceSecondary }}
             >
               <h3 
-                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-medium text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Patient Information:
@@ -325,50 +318,6 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   }}
                   />
                 </div>
-
-                {/* Clinic */}
-                <div className="flex flex-col gap-2">
-                  <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
-                  style={{ color: theme.text.primary }}
-                >
-                    Clinic
-                  </label>
-                  <input
-                    type="text"
-                    name="clinic"
-                    value={formData.clinic}
-                    onChange={handleChange}
-                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
-                  style={{
-                    backgroundColor: theme.input.background,
-                    border: `1px solid ${theme.input.border}`,
-                    color: theme.text.primary,
-                  }}
-                  />
-                </div>
-
-                {/* Phone */}
-                <div className="flex flex-col gap-2">
-                  <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
-                  style={{ color: theme.text.primary }}
-                >
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
-                  style={{
-                    backgroundColor: theme.input.background,
-                    border: `1px solid ${theme.input.border}`,
-                    color: theme.text.primary,
-                  }}
-                  />
-                </div>
               </div>
             </div>
           )}
@@ -381,12 +330,13 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
               style={{ backgroundColor: theme.surfaceSecondary }}
             >
               <h3 
-                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-medium text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Child {index + 1} Information:
               </h3>
               <div className="grid grid-cols-2 gap-4">
+                {/* First Name */}
                 <div className="flex flex-col gap-2">
                   <label 
                   className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
@@ -407,6 +357,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   }}
                   />
                 </div>
+                {/* Last Name */}
                 <div className="flex flex-col gap-2">
                   <label 
                   className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
@@ -427,46 +378,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   }}
                   />
                 </div>
-                <div className="flex flex-col gap-2">
-                  <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
-                  style={{ color: theme.text.primary }}
-                >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={child.email || ""}
-                    onChange={(e) => handleChildChange(index, e)}
-                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
-                  style={{
-                    backgroundColor: theme.input.background,
-                    border: `1px solid ${theme.input.border}`,
-                    color: theme.text.primary,
-                  }}
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
-                  style={{ color: theme.text.primary }}
-                >
-                    Phone number
-                  </label>
-                  <input
-                    type="tel"
-                    name="phoneNumber"
-                    value={child.phoneNumber || ""}
-                    onChange={(e) => handleChildChange(index, e)}
-                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
-                  style={{
-                    backgroundColor: theme.input.background,
-                    border: `1px solid ${theme.input.border}`,
-                    color: theme.text.primary,
-                  }}
-                  />
-                </div>
+                {/* Birth Date */}
                 <div className="flex flex-col gap-2">
                   <label 
                   className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
@@ -487,6 +399,7 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   }}
                   />
                 </div>
+                {/* Native Language */}
                 <div className="flex flex-col gap-2">
                   <label 
                   className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
@@ -507,37 +420,18 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
                   }}
                   />
                 </div>
-                <div className="flex flex-col gap-2">
+                {/* Class - Full Width */}
+                <div className="flex flex-col gap-2 col-span-2">
                   <label 
                   className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
                   style={{ color: theme.text.primary }}
                 >
-                    Clinic
+                    Class
                   </label>
                   <input
                     type="text"
-                    name="clinic"
-                    value={child.clinic || ""}
-                    onChange={(e) => handleChildChange(index, e)}
-                    className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
-                  style={{
-                    backgroundColor: theme.input.background,
-                    border: `1px solid ${theme.input.border}`,
-                    color: theme.text.primary,
-                  }}
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <label 
-                  className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[24px] transition-colors duration-200"
-                  style={{ color: theme.text.primary }}
-                >
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={child.phone || ""}
+                    name="class"
+                    value={child.class || ""}
                     onChange={(e) => handleChildChange(index, e)}
                     className="h-9 px-4 rounded-lg font-['Inter',_sans-serif] font-normal text-[13px] leading-[18px] focus:outline-none focus:ring-2 focus:ring-[#FF5A39]/20 transition-colors duration-200"
                   style={{

@@ -110,7 +110,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
           >
             <div className="flex items-center justify-between">
               <h3 
-                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-medium text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Partner Information:
@@ -254,7 +254,7 @@ export function AddPartnerModal({ isOpen, onClose, onSave }: AddPartnerModalProp
             style={{ backgroundColor: theme.surfaceSecondary }}
           >
               <h3 
-                className="font-['Inter',_sans-serif] font-normal text-[15px] leading-[22px] transition-colors duration-200"
+                className="font-['Inter',_sans-serif] font-medium text-[15px] leading-[22px] transition-colors duration-200"
                 style={{ color: theme.text.primary }}
               >
                 Company Information:

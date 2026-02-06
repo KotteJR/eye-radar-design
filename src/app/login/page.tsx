@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -58,12 +59,12 @@ export default function LoginPage() {
                 <label className="block font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] text-[#303030]">
                   Password
                 </label>
-                <a
-                  href="#"
+                <Link
+                  href="/forgot-password"
                   className="font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] text-[#a1a1a1] italic hover:underline transition-colors"
                 >
                   Forgot Password?
-                </a>
+                </Link>
               </div>
               <input
                 type="password"
