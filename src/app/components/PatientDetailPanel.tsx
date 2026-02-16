@@ -44,9 +44,10 @@ interface PatientDetailPanelProps {
   patient: Patient | null;
   onNavigateToAssessments?: (patient: Patient) => void;
   onNavigateToAutomatedFunctions?: (patient: Patient) => void;
+  onViewFullProfile?: () => void;
 }
 
-export function PatientDetailPanel({ patient, onNavigateToAssessments, onNavigateToAutomatedFunctions }: PatientDetailPanelProps) {
+export function PatientDetailPanel({ patient, onNavigateToAssessments, onNavigateToAutomatedFunctions, onViewFullProfile }: PatientDetailPanelProps) {
   const { theme, mode } = useTheme();
 
   if (!patient) {
@@ -339,7 +340,10 @@ export function PatientDetailPanel({ patient, onNavigateToAssessments, onNavigat
 
       {/* Action Buttons */}
       <div className="flex flex-col gap-2 mt-auto pt-4">
-        <button className="w-full h-10 bg-gradient-to-r from-[#FF5A39] to-[#FF9E75] text-white rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] hover:opacity-90 transition-opacity">
+        <button 
+          className="w-full h-10 bg-gradient-to-r from-[#FF5A39] to-[#FF9E75] text-white rounded-lg font-['Inter',_sans-serif] font-normal text-[14px] leading-[20px] hover:opacity-90 transition-opacity"
+          onClick={onViewFullProfile}
+        >
           View Full Profile
         </button>
         <button 

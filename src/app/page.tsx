@@ -12,6 +12,8 @@ import { AutomatedFunctionsList } from "./components/AutomatedFunctionsList";
 import { AddPatientModal } from "./components/AddPatientModal";
 import { AddPartnerModal } from "./components/AddPartnerModal";
 import { SettingsPage } from "./components/SettingsPage";
+import { PatientFullProfile } from "./components/PatientFullProfile";
+import { CalibrationPage } from "./components/CalibrationPage";
 
 interface Patient {
   id: string;
@@ -44,6 +46,7 @@ export default function Home() {
   const [reportSearchValue, setReportSearchValue] = useState<string>("");
   const [automatedFunctionSearchValue, setAutomatedFunctionSearchValue] = useState<string>("");
   const [activeAutomatedFunctions, setActiveAutomatedFunctions] = useState<any[]>([]);
+  const [viewingFullProfile, setViewingFullProfile] = useState(false);
 
   const handleSavePatient = (patientData: any) => {
     // Handle saving patient data
@@ -121,7 +124,7 @@ export default function Home() {
         </div>
 
         {/* Dynamic Content Area - Changes based on activeSection */}
-        {activeSection === "patients" && (
+        {activeSection === "patients" && !viewingFullProfile && (
           <>
             <div className="flex-1 min-w-0 pt-[25px] pb-[25px] pl-6 h-full overflow-hidden">
               <PatientsList
@@ -141,9 +144,19 @@ export default function Home() {
                   setAutomatedFunctionsFromPatient(patient);
                   setActiveSection("automated-functions");
                 }}
+                onViewFullProfile={() => setViewingFullProfile(true)}
               />
             </div>
           </>
+        )}
+
+        {activeSection === "patients" && viewingFullProfile && selectedPatient && (
+          <div className="flex-1 min-w-0 pt-[25px] pb-[25px] pl-6 pr-[25px] h-full overflow-hidden">
+            <PatientFullProfile 
+              patient={selectedPatient} 
+              onBack={() => setViewingFullProfile(false)} 
+            />
+          </div>
         )}
 
         {activeSection === "tests" && (
@@ -227,28 +240,7 @@ export default function Home() {
 
         {activeSection === "calibrate" && (
           <div className="flex-1 min-w-0 pt-[25px] pb-[25px] pl-6 pr-[25px] h-full overflow-hidden">
-            <div 
-              className="h-full rounded-2xl p-6 transition-colors duration-200"
-              style={{
-                backgroundColor: theme.surface,
-                border: `1px solid ${theme.border}`,
-              }}
-            >
-              <h1 
-                className="font-['Inter',_sans-serif] font-semibold text-[24px] mb-2 transition-colors duration-200"
-                style={{ color: theme.text.primary }}
-              >
-                Calibration
-              </h1>
-              <div className="text-center py-20">
-                <p 
-                  className="font-['Inter',_sans-serif] font-normal text-[14px] transition-colors duration-200"
-                  style={{ color: theme.text.secondary }}
-                >
-                  Calibration content coming soon...
-                </p>
-              </div>
-            </div>
+            <CalibrationPage />
           </div>
         )}
 
