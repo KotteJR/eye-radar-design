@@ -315,15 +315,24 @@ export function AddPatientModal({ isOpen, onClose, onSave }: AddPatientModalProp
           {children.map((child, index) => (
             <div 
               key={index} 
-              className="rounded-lg p-6 flex flex-col gap-4 transition-all duration-300 ease-out animate-in fade-in slide-in-from-top-2"
+              className="rounded-lg p-6 flex flex-col gap-4 transition-all duration-300 ease-out animate-in fade-in slide-in-from-top-2 relative"
               style={{ backgroundColor: theme.surfaceSecondary }}
             >
-              <h3 
-                className="font-['Inter',_sans-serif] font-medium text-[15px] leading-[22px] transition-colors duration-200"
-                style={{ color: theme.text.primary }}
-              >
-                Child {index + 1} Information:
-              </h3>
+              <div className="flex items-center justify-between">
+                <h3 
+                  className="font-['Inter',_sans-serif] font-medium text-[15px] leading-[22px] transition-colors duration-200"
+                  style={{ color: theme.text.primary }}
+                >
+                  Child {index + 1} Information:
+                </h3>
+                <button
+                  type="button"
+                  onClick={() => setChildren(children.filter((_, i) => i !== index))}
+                  className="w-7 h-7 flex items-center justify-center rounded-lg transition-all duration-200 hover:bg-red-50"
+                >
+                  <X size={14} style={{ color: theme.text.disabled }} />
+                </button>
+              </div>
               <div className="grid grid-cols-2 gap-4">
                 {/* First Name */}
                 <div className="flex flex-col gap-1.5">
